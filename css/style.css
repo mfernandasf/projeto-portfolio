@@ -1,0 +1,295 @@
+/* alterando font de onde fica as informações individuais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* alterando cabeçalho */
+header {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s;
+    letter-spacing: 1px;
+}
+
+header nav ul li a:hover {
+    color: #a8dadc;
+}
+
+#destaque h1 {
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 10px;
+}
+
+#linha {
+    width: 80px;
+    height: 4px;
+    background: #a8dadc;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+/* alterando a frase destacada */
+#frase p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #f1faee;
+}
+
+/* alterando a seção sobre */
+#sobre {
+    padding: 50px 10%;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.person {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.person:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.person .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #457b9d;
+}
+
+.text-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.profissao {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+    
+/* alterando estilo para informações da equipe */
+.team-info {
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); 
+    padding: 60px 8%;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    max-width: 1200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.team-info h2 {
+    font-size: 2.8rem;
+    color: #1d3557; 
+    margin-bottom: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    border-bottom: 3px solid #457b9d; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.team-info p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.team-info ul li {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-info ul li:hover {
+    background: #f0f4f8;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-info ul li strong {
+    color: #457b9d; 
+}
+
+/* alterando o estilo da seção de contato */
+.contact-grid {
+   
+
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); 
+    padding: 60px 8%;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    max-width: 1200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-grid h2 {
+    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #457b9d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* alterando o estilo da grid de contato */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: #f1f4f8;
+}
+
+.grid-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid-item strong {
+    color: #457b9d;
+}
+
+/* alterando o footer */
+footer {
+    background: #1d3557;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a8dadc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f1faee;
+}
+
+footer {
+    background-color:  #1d3557;
+    color: #fff;
+    height: 30px;
+}
